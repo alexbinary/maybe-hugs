@@ -14,7 +14,7 @@ exit 1
 fi
 
 for CUTIE in "$@"; do
-    # Replace spaces with underscores and transform chracters to uppercase.
+    # Replace spaces with underscores and transform characters to uppercase.
     CUTIE_NAME=${CUTIE// /_}
     CUTIE_NAME=$(echo $CUTIE_NAME | awk '{print toupper($0)}')
 
